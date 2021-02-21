@@ -1,0 +1,135 @@
+#table-1{
+    border-radius: 6px;
+    margin-top: 170px;
+    width: 37%;
+    height: fit-content;
+    background-color:rgb(255, 255, 255);
+    float: right;
+    margin-left: 40%;
+
+
+}
+
+table
+{
+    margin-left: -35%;
+    margin-right: 10%;
+    width: 100%;                                        /*表格占据整个页面*/
+    border-spacing: 0;                                  /*单元格边框间距为0*/
+
+
+}
+
+.Modbus
+{
+    border:solid #ccc 1px;                              /*设置表格外边框*/
+    border-radius: 10px;                                /*设置表格外边框圆角*/
+}
+
+.Modbus td,.Modbus th
+{
+    border-right:solid #ccc 1px;                        /*设置表格单元格外边框，只设置右下边框*/
+    border-bottom: solid #ccc 1px;
+    padding: 10px;                                      /*设置单元格内边距，单元格内容显得不拥挤*/
+    text-align: center;                                 /*单元格内容居中*/
+}
+
+.Modbus thead
+{
+    background-color: #dce9f9;                          /*设置表头背景色*/
+}
+
+.Modbus td:last-child,.Modbus th:last-child
+{
+    border-right: none;                                 /*去掉表格每一行最后一列的右边框*/
+}
+
+.Modbus tr:last-child td
+{
+    border-bottom: none;                                /*去掉最后一行中所有单元格的下边框*/
+}
+
+/*单元格设置圆角*/
+.Modbus th:first-child
+{
+    border-radius: 10px 0 0 0;
+}
+
+.Modbus th:last-child
+{
+    border-radius: 0 10px 0 0;
+}
+
+.Modbus tr:last-child td:first-child
+{
+    border-radius: 0 0 0 10px;
+}
+
+.Modbus tr:last-child td:last-child
+{
+    border-radius: 0 0 10px 0;
+}
+
+/*鼠标移动至单元格，单元格高亮显示*/
+.Modbus tr:hover
+{
+    background: #fafaf9;
+}
+
+/*分别设置每一行中单元格的宽度*/
+.item1
+{
+    width: 40%;
+}
+
+.item2
+{
+    width: 40%;
+}
+.item3
+{
+    width: 40%;
+}
+
+/*搜索框*/
+.search{
+    width: 90%;
+    height: 50px;
+    margin-top: 50px ;
+    margin-bottom: 15px;
+    display: flex;
+    margin-left: -15%;
+}
+.search input{
+    float: left;
+    flex: 4;
+    height:50px;
+    outline: none;
+    border: 1px solid rgb(20, 115, 179);
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.search button{
+    float: right;
+    flex: 1;
+    height: 50px;
+    background-color: rgb(20, 115, 179);
+    color: white;
+    border-style: none;
+    outline: none;
+}
+.search button i{
+    font-style: normal;
+}
+.search button:hover{
+    font-size: 16px;
+}
+/*对比柱状图*/
+#chart-1 {
+             float: left;
+             background-color: white;
+             width: 65%;
+             height: 380px;
+             margin-top: -320px;
+             margin-left: -30%;
+         }
